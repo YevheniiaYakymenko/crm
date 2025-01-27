@@ -1,0 +1,10 @@
+.label{
+    border-radius: 28px;
+    background: #dcfce7;
+    display: inline-flex;
+    padding: 4px 14px;
+    align-items: center;
+    gap: 8px;
+    color: #15803d;
+
+}
