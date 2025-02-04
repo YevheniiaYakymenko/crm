@@ -28,7 +28,7 @@ export default function SidebarItem({
             'after:h-full after:ml-auto after:border-2 after:border-purple-200 after:rounded-sm',
         )}
       >
-        <Imag className="ml-5" width={18} height={18} src={src} alt={alt} />
+        <Image className="ml-5" width={18} height={18} src={src} alt={alt} />
         <span className="font-medium text-zinc-50">{children}</span>
       </Link>
     </li>
