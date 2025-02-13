@@ -9,8 +9,8 @@ export default async function Page({ params }: PageProps) {
   const resolvedParams = await params;
 
   return (
-    <>
-      <Header>Company ({resolvedParams.id})</Header>
-    </>
+    <div className="py-6 px-10">
+      <p>{`Information about company (${resolvedParams.id})`}</p>
+    </div>
   );
 }

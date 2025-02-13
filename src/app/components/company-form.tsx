@@ -24,12 +24,12 @@ const initialValues: CompanyFieldValues = {
 };
 
 export interface CompanyFormProps {
-  onSubmit: (values: CompanyFieldValues) => void | Promise<void>;
+  onSubmitAction: (values: CompanyFieldValues) => void | Promise<void>;
 }
 
-export default function CompanyForm({ onSubmit }: CompanyFormProps) {
+export default function CompanyForm({ onSubmitAction }: CompanyFormProps) {
   return (
-    <Formik initialValues={initialValues} onSubmit={onSubmit}>
+    <Formik initialValues={initialValues} onSubmit={onSubmitAction}>
       <Form className="flex flex-col gap-10">
         <p className="mb-0.5 text-xl">Add new company</p>
         <div className="flex gap-6">

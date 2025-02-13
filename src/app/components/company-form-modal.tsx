@@ -5,16 +5,16 @@ import CompanyForm, { CompanyFormProps } from '@/app/components/company-form';
 import Modal, { ModalProps } from '@/app/components/modal';
 
 export interface CompanyFormModalProps extends ModalProps {
-  onSubmit: CompanyFormProps['onSubmit'];
+  onSubmitAction: CompanyFormProps['onSubmitAction'];
 }
 
 export default function CompanyFormModal({
-  onSubmit,
+  onSubmitAction,
   ...rest
 }: CompanyFormModalProps) {
   return (
     <Modal {...rest}>
-      <CompanyForm onSubmit={onSubmit} />
+      <CompanyForm onSubmitAction={onSubmitAction} />
     </Modal>
   );
 }
